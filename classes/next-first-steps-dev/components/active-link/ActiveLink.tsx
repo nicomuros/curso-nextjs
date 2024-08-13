@@ -11,7 +11,6 @@ interface Props {
   text: string;
 }
 
-
 export const ActiveLink = ({  path, text }: Props ) => {
 
   const pathName = usePathname();

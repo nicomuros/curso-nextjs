@@ -1,10 +1,7 @@
-import Link from 'next/link'
+import { Typography } from '@mui/material'
 
 export default function Home() {
   return (
-    <div>
-      <h1>Home</h1>
-      <Link href={'/about'}>About page</Link>
-    </div>
+    <Typography>Home</Typography>
   );
 }

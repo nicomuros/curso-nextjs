@@ -8,7 +8,6 @@ interface Props {
 export default function GeneralLayout({ children }: Props) {
   return(
   <>
-    <Typography> Hello World! </Typography>
     { children }
   </>
   );

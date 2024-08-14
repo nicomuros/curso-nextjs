@@ -1,23 +1,31 @@
-import { Box, Container, Grid, Typography } from '@mui/material'
+import { Container, Paper, Typography } from '@mui/material'
+import Counter from '../../../components/client/counter/Counter'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Counter',
+  description: 'Counter page',
+}
 
 export default function CounterPage() {
   return (
-    <Box>
-      <Container>
-        <Grid container spacing={ 2 }>
-          <Grid item xs={ 12 }>
-            <Typography variant='h1'>Counter Page</Typography>
-          </Grid>
-          <Grid item xs={ 12 }>
-            <Typography variant='h2'>Counter</Typography>
-            <Typography variant='h3'>0</Typography>
-          </Grid>
-          <Grid item xs={ 12 }>
-            <button>Increment</button>
-            <button>Decrement</button>
-          </Grid>
-        </Grid>
-      </Container>
-    </Box>
+    <Container
+      maxWidth='xl'
+      sx={ { display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '100vh' } }
+    >
+      <Paper
+        elevation={ 16 }
+        sx={ {
+          padding: 4,
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          gap: 2
+        } }
+      >
+        <Typography variant='h2' align='center'>Counter</Typography>
+        <Counter />
+      </Paper>
+    </Container>
   )
 }

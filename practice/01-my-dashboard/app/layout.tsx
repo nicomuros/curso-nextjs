@@ -4,6 +4,7 @@ import "./globals.css"
 import { CssBaseline, ThemeProvider } from '@mui/material'
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v13-appRouter'
 import theme from '../theme'
+import Navbar from '../components/server/navbar/Navbar'
 
 const inter = Inter({ subsets: ["latin"] })
 

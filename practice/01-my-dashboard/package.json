@@ -12,10 +12,12 @@
     "test:coverage": "jest --ci --coverage"
   },
   "dependencies": {
+    "@emotion/cache": "^11.13.1",
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
     "@mui/icons-material": "^5.16.0",
     "@mui/material": "^5.16.0",
+    "@mui/material-nextjs": "^5.16.6",
     "formik": "^2.4.6",
     "next": "^14.2.4",
     "prom-client": "^15.1.3",

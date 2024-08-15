@@ -1,0 +1,1 @@
+export { fetchListaPokemons } from './pokemons.action'

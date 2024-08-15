@@ -17,15 +17,15 @@ export const sidebarButtons: ISidebarButton[] = [
     icon: CalculateIcon
   },
   {
-    text: 'Pokemons',
+    text: 'Pokemons Table',
     subtext: 'Data Grid',
     path: '/dashboard/pokemons/data-grid',
     icon: CatchingPokemonIcon
   },
   {
-    text: 'Pokemons',
+    text: 'Pokemons SSG',
     subtext: 'Generacion Estatica',
-    path: '/dashboard/pokemons',
+    path: '/dashboard/pokemons/ssg',
     icon: CatchingPokemonIcon
   }
 ]
